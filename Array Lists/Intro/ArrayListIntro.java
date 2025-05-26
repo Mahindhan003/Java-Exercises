@@ -1,8 +1,10 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ArrayListIntro {
     public static void main(String[] args) {
         //Creating ArrayList
+        Scanner input=new Scanner(System.in);
         ArrayList<String> names=new ArrayList<>();
 
         //Adding Elements
@@ -33,6 +35,16 @@ public class ArrayListIntro {
         names.remove("Mahi");
         //By Index
         names.remove("Giri");
+        System.out.println(names);
+
+        //Replacing Elements
+        names.set(0,"Jeya");
+        System.out.println(names);
+
+        //Expanding ArrayList Using Input
+        System.out.println("Enter Two Names:");
+        names.add(input.next());
+        names.add(input.next());
         System.out.println(names);
 
 
